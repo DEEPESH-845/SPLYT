@@ -10,7 +10,7 @@
 
  </div>
 
- <h3 style="font-weight:700;font-size:30px;">SPLYT </h3>
+ ## SPLYT
 
   <div >
    Built an interactive awwards recoginized Site Of The Day (SOTD) Website using <b>GSAP</b>, <b>ReactJS</b>, and <b>Tailwind CSS</b>.
