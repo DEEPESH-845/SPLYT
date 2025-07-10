@@ -1,5 +1,8 @@
 <div >
  <br />
+ <h1 align="center" style="font-size: 4em; color: #2E8B57;">
+  SPLYT
+</h1>
  <br />
  <br />
 
@@ -10,7 +13,7 @@
 
  </div>
 
- ## SPLYT
+
 
   <div >
    Built an interactive awwards recoginized Site Of The Day (SOTD) Website using <b>GSAP</b>, <b>ReactJS</b>, and <b>Tailwind CSS</b>.
