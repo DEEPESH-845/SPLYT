@@ -1,0 +1,11 @@
+{
+  "buildCommand": "npx vite build",
+  "devCommand": "npx vite dev",
+  "installCommand": "npm install",
+  "framework": "vitejs",
+  "functions": {
+    "app/**/*.{js,ts,jsx,tsx}": {
+      "maxDuration": 30
+    }
+  }
+}
