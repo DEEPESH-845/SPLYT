@@ -3,6 +3,10 @@
   "outputDirectory": "dist",
   "devCommand": "npx vite dev",
   "installCommand": "npm install",
-  "framework": "vite"
-  
+  "framework": "vite",
+  "functions": {
+    "src/**/*.{js,ts,jsx,tsx}": {
+      "maxDuration": 30
+    }
+  }
 }
