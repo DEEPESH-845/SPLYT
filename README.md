@@ -1,7 +1,7 @@
 <div >
  <br />
  <h1  style="font-size: 6em; color: #2E8B57;">
-  SPLYT
+  SPYLT
 </h1>
  <br />
  <div>
