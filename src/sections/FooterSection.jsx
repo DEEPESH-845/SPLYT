@@ -1,9 +1,30 @@
 import { useMediaQuery } from "react-responsive";
+import { useState } from "react";
 
 const FooterSection = () => {
   const isMobile = useMediaQuery({
     query: "(max-width: 768px)",
   });
+
+   const [email, setEmail] = useState("");
+
+  const handleEmailSubmit = () => {
+    if (email.trim()) {
+      console.log("Email submitted:", email);
+      // Add your email submission logic here
+      // For example: send to API, show success message, etc.
+      alert(`Thank you! Email ${email} has been submitted.`);
+      setEmail(""); // Clear the input after submission
+    } else {
+      alert("Please enter a valid email address.");
+    }
+  };
+
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      handleEmailSubmit();
+    }
+  };
 
   return (
     <section className="footer-section">
@@ -47,8 +68,8 @@ const FooterSection = () => {
           </div>
         </div>
 
-        <div className="mt-40 md:px-10 px-5 flex gap-10 md:flex-row flex-col justify-between text-milk font-paragraph md:text-lg font-medium">
-          <div className="flex items-center md:gap-16 gap-5">
+        <div className="mt-100 md:px-10 px-5 flex gap-10 md:flex-row flex-col justify-between text-milk font-paragraph md:text-lg font-medium">
+          <div className="flex items-center md:gap-16 md:mb-45 gap-20">
             <div>
               <p>SPYLT Flavors</p>
             </div>
@@ -64,29 +85,37 @@ const FooterSection = () => {
             </div>
           </div>
 
-          <div className="md:max-w-lg">
+          <div className="md:max-w-lg 2xl:max-w-2xl ">
             <p>
               Get Exclusive Early Access and Stay Informed About Product
               Updates, Events, and More!
             </p>
-            <div className="flex justify-between items-center border-b border-[#D9D9D9] py-5 md:mt-10">
+            <div className="flex justify-between items-center border-b border-[#D9D9D9] py-5 md:mt-10 group hover:border-white/70 transition-all duration-300">
               {/* The input field and arrow icon for newsletter signup. */}{" "}
               {/* A
           border at the bottom for a clean, modern look. */}
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="w-full placeholder:font-sans placeholder:text-[#999999]"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                onClick={handleKeyPress}
+                className="w-full placeholder:font-sans placeholder:text-[#999999] bg-transparent text-white outline-none border-none focus:placeholder-white/50 hover:placeholder-white/70 transition-all duration-300"
+              />  
+              <img 
+                src="/images/arrow.svg" 
+                alt="arrow"
+                onClick={handleEmailSubmit}
+                className="ml-2 cursor-pointer opacity-70 hover:opacity-100 hover:scale-105 transition-all duration-300" 
               />
-              <img src="/images/arrow.svg" alt="arrow" />
             </div>
           </div>
         </div>
 
-        <div className="copyright-box">
+        <div className="copyright-box  ">
           {/* The final row with copyright and legal links. */}
           <p>Copyright © 2025 Spylt - All Rights Reserved</p>
-          <div className="flex items-center gap-7">
+          <div className="flex  items-center  gap-7">
             <p>Privacy Policy</p>
             <p>Terms of Sеrvice</p>
           </div>
