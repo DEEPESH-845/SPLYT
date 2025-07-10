@@ -1,8 +1,9 @@
 <div >
  <br />
+ <h1  style="font-size: 6em; color: #2E8B57;">
+  SPYLT
+</h1>
  <br />
- <br />
-
  <div>
    <img src="https://img.shields.io/badge/-React_JS_V19-black?style=for-the-badge&logoColor=white&logo=react&color=007ACC" alt="react.js" />
    <img src="https://img.shields.io/badge/-Tailwind_CSS_v4-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=030712" alt="tailwindcss" />
@@ -10,7 +11,7 @@
 
  </div>
 
- <h3 style="font-weight:700;font-size:30px;">SPLYT </h3>
+
 
   <div >
    Built an interactive awwards recoginized Site Of The Day (SOTD) Website using <b>GSAP</b>, <b>ReactJS</b>, and <b>Tailwind CSS</b>.
