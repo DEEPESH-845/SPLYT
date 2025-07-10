@@ -1,6 +1,6 @@
 <div >
  <br />
- <h1 align="center" style="font-size: 4em; color: #2E8B57;">
+ <h1  style="font-size: 6em; color: #2E8B57;">
   SPLYT
 </h1>
  <br />
