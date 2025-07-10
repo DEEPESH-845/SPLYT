@@ -1,7 +1,12 @@
 {
-  "buildCommand": "npx vite build --base=/Spylt/",
+  "buildCommand": "npx vite build",
   "devCommand": "npx vite dev",
   "installCommand": "npm install",
-  "framework": "vite"
-
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
