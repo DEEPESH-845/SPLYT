@@ -13,33 +13,33 @@ import FooterSection from "./sections/FooterSection";
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 const App = () => {
-  useGSAP(() => {
-    ScrollSmoother.create({
-      smooth: 3,
-      effects: true,
-    });
-  });
+	useGSAP(() => {
+		ScrollSmoother.create({
+			smooth: 3,
+			effects: true,
+		});
+	});
 
-  return (
-    <main>
-      <NavBar />
-      <div id="smooth-wrapper">
-        <div id="smooth-content">
-          <HeroSection />
-          <MessageSection />
-          <FlavorSection />
-          <NutritionSection />
+	return (
+		<main>
+			<NavBar />
+			<div id="smooth-wrapper">
+				<div id="smooth-content">
+					<HeroSection />
+					<MessageSection />
+					<FlavorSection />
+					<NutritionSection />
 
-          <div>
-            <BenefitSection />
-            <TestimonialSection />
-          </div>
+					<div>
+						<BenefitSection />
+						<TestimonialSection />
+					</div>
 
-          <FooterSection />
-        </div>
-      </div>
-    </main>
-  );
+					<FooterSection />
+				</div>
+			</div>
+		</main>
+	);
 };
 
 export default App;

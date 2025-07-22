@@ -282,3 +282,27 @@ body::-webkit-scrollbar {
     transform: rotate(360deg);
   }
 }
+
+.animated {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+}
+
+.slider-wrapper,
+.drinks,
+.elements,
+.flavor-section,
+.first-text-split,
+.flavor-text-scroll,
+.second-text-split {
+  will-change: transform;
+  transform: translateZ(0);
+}
+.first-title,
+.sec-title,
+.third-title,
+.vd-card {
+  will-change: transform;
+  transform: translateZ(0);
+  /* Optional: force GPU compositing */
+}
